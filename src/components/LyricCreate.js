@@ -22,7 +22,6 @@ class LyricCreate extends Component {
       .then(() => this.setState({ content: "" }));
   }
   render() {
-    console.log(this.props);
     return (
       <div className="container-fluid">
         <form onSubmit={this.onSubmit.bind(this)}>

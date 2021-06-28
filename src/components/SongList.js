@@ -28,7 +28,6 @@ class SongList extends Component {
     });
   }
   render() {
-    console.log(this.props.data);
     if (this.props.data.loading) return <h1>Loading</h1>;
     return (
       <div className="container-fluid">
