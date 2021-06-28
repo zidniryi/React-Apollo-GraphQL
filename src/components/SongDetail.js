@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { graphql } from "react-apollo";
 import { Link } from "react-router-dom";
 import fetchSong from "../queries/fetchSong";
+import LyricCreate from "./LyricCreate";
 
 class SongDetail extends Component {
   render() {
@@ -23,6 +24,8 @@ class SongDetail extends Component {
         <hr />
         <h1>Song Detail</h1>
         <h2>{song.title}</h2>
+        <hr />
+        <LyricCreate />
       </div>
     );
   }
