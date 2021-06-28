@@ -19,7 +19,7 @@ class SongList extends Component {
           key={id}
           className="list-group-item d-flex justify-content-between align-items-center"
         >
-          {title}
+          <Link to={`/detail/${id}`}>{title}</Link>
           <div onClick={() => this.onSongDelete(id)}>
             <span className="btn btn-danger">Delete</span>
           </div>
