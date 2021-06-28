@@ -27,7 +27,7 @@ class SongDetail extends Component {
         <hr />
         <LyricCreate songId={this.props.match.params.id} />
         <hr />
-        <LyricList />
+        <LyricList lyrics={song.lyrics} />
       </div>
     );
   }
